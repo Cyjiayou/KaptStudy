@@ -11,12 +11,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        findViewById<Button>(R.id.jumpToSecondActivity).setOnClickListener {
-            SecondActivityBuilder.startWithoutOptional(this, 18, "caoyang")
-        }
-
-        findViewById<Button>(R.id.jumpToThirdActivity).setOnClickListener {
-            ThirdActivityBuilder.start(this, "hsm", "cy", 0L, "www.baidu.com")
-        }
+//        findViewById<Button>(R.id.jumpToSecondActivity).setOnClickListener {
+//            SecondActivityBuilder.startWithoutOptional(this, 18, "caoyang")
+//        }
+//
+//        findViewById<Button>(R.id.jumpToThirdActivity).setOnClickListener {
+//            ThirdActivityBuilder.start(this, "hsm", "cy", 0L, "www.baidu.com")
+//        }
     }
 }
