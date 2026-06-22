@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     kotlin("android")
-    kotlin("kapt")
+//    kotlin("kapt")
+    id("com.google.devtools.ksp")
 }
 
 kotlin {
@@ -47,7 +48,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(project(":annotation"))
     implementation(project(":runtime"))
-    "kapt"(project(":compiler"))
+//    kapt(project(":compiler"))
+    ksp(project(":ksp-compiler"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
